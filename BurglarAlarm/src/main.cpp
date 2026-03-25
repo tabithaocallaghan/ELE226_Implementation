@@ -2,15 +2,19 @@
 
 // put function declarations here:
 int myFunction(int, int);
+int result;
 
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(9600);
   int result = myFunction(2, 3);
-  
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+
+  Serial.println(result);
 
 }
 
