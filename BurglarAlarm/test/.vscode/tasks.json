@@ -5,13 +5,13 @@
       "label": "build test",
       "type": "shell",
       "command": "g++",
-      "args": [
-        "../test/testing_file.cpp",
-        "../lib/PIN_manager.cpp",
-        "-Ilib",
-        "-o",
-        "tester"
-      ],
+     "args": [
+    "../test/testing_file.cpp",
+    "../lib/Pin_manager.cpp",
+    "-Ilib",
+    "-o",
+    "tester"
+  ],
       "group": {
         "kind": "build",
         "isDefault": true
