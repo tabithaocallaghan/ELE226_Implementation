@@ -22,15 +22,6 @@ private:
         INVALID
     };
 
-    struct Time
-    {
-        time_t init_time;
-        time_t current_Time;
-        time_t lock_Time; 
-        time_t Time_diff;
-    };
-
-    Time pin_timer;
     enum PinStatus currentStatus;
     void resetAttempts();
     bool isLocked();
