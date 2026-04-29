@@ -39,18 +39,16 @@ void PIN_manager::resetAttempts()
 
 bool PIN_manager:: isLocked()
 {
-    int seconds;
+        int seconds=10;
         currentStatus=INVALID;
          system("clear");
-        cout<<maxAttempts<<" attempts made. System locked for "<<pin_timer.lock_Time<<endl;
-        cout<<"System is locked"<<endl;
-       // time(&pin_timer.current_Time);
-        seconds=10;
-
+        cout<<maxAttempts<<" attempts made. System locked for "<<seconds<<" seconds"<<endl;
+        sleep(2);
         while(seconds>=1)
         {
             system("clear");
-            cout<<"System is locked for "<<seconds<<" remaining"<<flush;
+            cout<<"System is locked"<<endl;
+            cout<<seconds<<" seconds remaining"<<flush;
             this_thread ::sleep_for(chrono:: seconds(1));
             //cout<<pin_timer.Time_diff;
             seconds--;
