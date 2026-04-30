@@ -15,5 +15,6 @@ int main(){
 
     UserDB AuthDB;
     AuthDB.AddUser();
+   
 }
 

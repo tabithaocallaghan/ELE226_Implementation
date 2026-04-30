@@ -30,6 +30,7 @@ class UserDB
 
     vector <AuthUser> AuthUserList;
     void createDB();
+    void AdminInit();
     public:
     UserDB();
     void AddUser();
