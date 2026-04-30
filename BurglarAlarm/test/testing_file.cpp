@@ -6,6 +6,7 @@
 #include <iomanip>
 #include <unistd.h>
 #include <ctype.h>
+#include <sqlite3.h>
 
 using namespace std;
 
@@ -15,6 +16,9 @@ int main(){
 
     UserDB AuthDB;
     AuthDB.AddUser();
-   
+   AuthDB.ViewUsers();
+
+   PIN_manager mightwork();
+   //mightwork
 }
 

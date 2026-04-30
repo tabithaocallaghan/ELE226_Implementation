@@ -36,6 +36,7 @@ class UserDB
     void AddUser();
     void removeUser();
     void ViewUsers();
+    int Auth_Pins();
 
     
 };
