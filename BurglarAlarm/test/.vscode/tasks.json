@@ -8,7 +8,11 @@
      "args": [
     "../test/testing_file.cpp",
     "../lib/Pin_manager.cpp",
+    "../lib/UserDatabase.cpp",
     "-Ilib",
+     "-I/opt/homebrew/opt/sqlite/include",
+    "-L/opt/homebrew/opt/sqlite/lib",
+    "-lsqlite3",
     "-o",
     "tester"
   ],
